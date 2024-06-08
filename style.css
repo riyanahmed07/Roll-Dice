@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color: rgb(204, 31, 31);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.gameAera{
+width: 60%;
+height: 60%;
+background-color: antiquewhite;
+display: flex;
+justify-content: center;
+
+}
+
+.player{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#player1{
+    width: 50%;
+    background-color: burlywood;
+    
+}
+
+#player2{
+    width: 50%;
+    background-color: palevioletred;
+    
+}
+.currentScore{
+    padding: 20px 50px;
+    background-color: rgb(112, 7, 7);
+    border-radius: 10px;
+    color: azure;
+}
+
+#extreBtn{
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+height: 50%;
+
+
+
+}
+
+.active{
+    background-color: burlywood;
+}
+
+#dice{
+    width: 100px;
+    height: 100px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 22px;
+}
