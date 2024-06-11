@@ -32,13 +32,13 @@ justify-content: center;
 
 #player1{
     width: 50%;
-    background-color: burlywood;
+    background-color: white;
     
 }
 
 #player2{
     width: 50%;
-    background-color: palevioletred;
+    background-color:pink;
     
 }
 .currentScore{

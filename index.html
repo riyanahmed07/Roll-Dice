@@ -11,12 +11,12 @@
         <div class="gameAera">
             <div id="player1" class="player">
                 <div class="name">Riyan</div>
-                <div class="totalScore">0</div>
+                <div id="totalScore1" class="totalScore">0</div>
                 <div class="currentScore" id="currentScore1">0</div>
             </div>
             <div id="player2" class="player">
                 <div class="name">Anas</div>
-                <div class="totalScore">0</div>
+                <div  id="totalScore2" class="totalScore">0</div>
                 <div class="currentScore" id="currentScore2">0</div>
             </div>
         </div>
@@ -24,7 +24,7 @@
         <div style="display: flex;flex-direction: column;margin: -10px;"> <button>New Game</button>&nbsp;
         <button onclick="rollDiceHandler()">Roll Dice</button></div>&nbsp;&nbsp;&nbsp;
         <div><img id="dice" src="/asset/1.jpg" alt="" srcset=""></div>
-        &nbsp;&nbsp;&nbsp;<button>Hold</button>
+        &nbsp;&nbsp;&nbsp;<button onclick="holdhandler()">Hold</button>
     </div>
 
     <script src="app.js"></script>
