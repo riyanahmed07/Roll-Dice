@@ -18,15 +18,15 @@ function rollDiceHandler(){
 
     console.log(randomNumber);
 
-    diceImg.src = `/asset/${randomNumber}.jpg` ; 
+    diceImg.src = `./asset/${randomNumber}.jpg` ; 
     score += randomNumber
 
     if(activePlayer){
         if(randomNumber==1){
          activePlayer = false
          player1CurrentScore.innerHTML = 0
-         player1.style.backgroundColour = "pink"
-         player2.style.backgroundColour = "white"
+         player1.style.backgroundColor = "pink"; 
+         player2.style.backgroundColor = "white"; 
          score = 0
 
         }else{
@@ -38,8 +38,8 @@ function rollDiceHandler(){
         if(randomNumber==1){
             activePlayer = true
             player2CurrentScore.innerHTML = 0
-             player2.style.backgroundColour = "pink"
-         player1.style.backgroundColour = "white"
+            player2.style.backgroundColor = "pink"; 
+         player1.style.backgroundColor = "white"; 
          score = 0
 
            }else{
@@ -53,13 +53,13 @@ if(activePlayer){
     player1TotalScore.innerText = +player1TotalScore.innerText + score
     player1CurrentScore.innerHTML = 0
     activePlayer = false
-    player2.style.backgroundColour = "pink"
-         player1.style.backgroundColour = "white"
+    player2.style.backgroundColor = "white"; 
+    player1.style.backgroundColor = "pink"; 
 }else{
     player2TotalScore.innerText = +player2TotalScore.innerText + score
     player2CurrentScore.innerHTML = 0
     activePlayer = true
-    player1.style.backgroundColour = "pink"
-         player2.style.backgroundColour = "white"
+    player1.style.backgroundColor = "white"; 
+         player2.style.backgroundColor = "pink"; 
 }
 }
